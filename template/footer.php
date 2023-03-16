@@ -17,14 +17,26 @@
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-facebook fs-3 text-danger"></i></a>
+                            <li class="list-inline-item">
+                                <i class="bi-facebook fs-3 text-danger"></i>
                             </li>
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-whatsapp fs-3 text-danger"></i></a>
+                            <li class="list-inline-item text-white">
+                                ___
                             </li>
                             <li class="list-inline-item">
-                                <a href="#!"><i class="bi-instagram fs-3 text-danger"></i></a>
+                                <i class="bi-arrow-right fs-3 text-danger"></i>
+                            </li>
+                            <li class="list-inline-item text-white">
+                                ___
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="https://www.facebook.com/fija.argosal"><i class="bi-globe fs-3 text-danger"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="https://www.facebook.com/movil.argosal/"><i class="bi-phone-fill fs-3 text-danger"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/argosal.hogar/"><i class="bi-house fs-3 text-danger"></i></a>
                             </li>
                         </ul>
                     </div>
