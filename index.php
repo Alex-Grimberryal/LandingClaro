@@ -92,10 +92,6 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <h2 class="display-6">Aún no te decides, te envíamos nuestras promociones, Animate!</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-left">
-                    <div class="col-xl-6">
                         <form id="contactFormFooter" method="post" action="conexion/guardado_aux.php">
                             <!-- ingreso de datos-->
                             <div class="row-a">
