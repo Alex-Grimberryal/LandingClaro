@@ -21,7 +21,7 @@
                                 <a href="#!"><i class="bi-facebook fs-3 text-danger"></i></a>
                             </li>
                             <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-twitter fs-3 text-danger"></i></a>
+                                <a href="#!"><i class="bi-whatsapp fs-3 text-danger"></i></a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="#!"><i class="bi-instagram fs-3 text-danger"></i></a>

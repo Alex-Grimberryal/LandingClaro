@@ -20,7 +20,7 @@
   position: relative;
   background-color: #343a40;
   background-size: cover;
-   
+    
 }
 .display-2{
   margin-top: 2rem!important;
@@ -29,4 +29,13 @@
 
 .call-to-action{
   background: url("../img/Banner_4.jpeg") no-repeat;
+}
+
+.row-a{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.confirm{
+  background: url('../img/Banner\ 1.jpg') no-repeat center center;
 }

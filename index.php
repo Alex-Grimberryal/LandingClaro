@@ -87,19 +87,23 @@
             </section>
     
         <!-- email auxiliar-->
-        <section class="call-to-action text-black text-center" id="signup">
+        <section class="call-to-action text-white text-center" id="signup">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <h2 class="mb-4">Aún no te decides, te envíamos nuestras promociones, Animate!</h2>
+                        <h2 class="display-6">Aún no te decides, te envíamos nuestras promociones, Animate!</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-left">
+                    <div class="col-xl-6">
                         <form id="contactFormFooter" method="post" action="conexion/guardado_aux.php">
                             <!-- ingreso de datos-->
-                            <div class="row">
+                            <div class="row-a">
                                 <div class="col">
                                     <input class="form-control form-control-lg" id="ea" name="email_au" type="email" />
                                     <label for="ea"> Ingrese Correo Electrónico</label>
                                 </div>
-                                <div class="col-auto"><button class="btn btn-danger btn-lg" id="submitButton" type="submit">Enviar</button></div>
+                                <div class="col-auto" style="padding: 0px 10px 10px 10px;"><button class="btn btn-danger btn-lg" id="submitButton" type="submit">Enviar</button></div>
                             </div>                                
                         </form>
                     </div>
