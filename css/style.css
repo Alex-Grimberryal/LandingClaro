@@ -1,0 +1,32 @@
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.si{
+  background: url("../img/Banner\ 3.jpg") no-repeat center right;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-color: #343a40;
+  background-size: cover;
+  
+}
+.display-2{
+  margin-top: 2rem!important;
+  margin-bottom: 2rem!important;
+}
+
+.call-to-action{
+  background: url("../img/Banner_4.jpeg") no-repeat;
+}
