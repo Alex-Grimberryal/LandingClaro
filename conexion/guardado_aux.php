@@ -11,11 +11,11 @@ if (!$conn) {
     die("Error al conectarse a la base de datos: " . mysqli_connect_error());
 }
 
-
+$numb = $_POST['numb'];
 $email = $_POST['email_au'];
 
 
-$sql = "INSERT INTO dauxiliares (email) VALUES ('$email')";
+$sql = "INSERT INTO dprincipales (email, numb) VALUES ('$email','$numb')";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: confirmacion.php");

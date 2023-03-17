@@ -29,15 +29,25 @@
                                                 <input class="form-control" id="e" name="email" type="email"/>
                                                 <label for="e">Ingrese Correo Electrónico</label>
                                             </div>
-                                            <div class="form-floating mb-3">
-                                                <select class="form-select" id="e2" name="lstOp" aria-label="New Field 2">
-                                                    <option value="1">Seleccione interés</option>
-                                                    <option value="2">Celulares</option>
-                                                    <option value="3">Internet</option>
-                                                    <option value="4">Promociones</option>
-                                                    <option value="5">Portabilidad</option>
-                                                </select>
-                                                <label for="e2">Escoge la opción sobre la que deseas información</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="e2" name="lstOp" aria-label="New Field 2">
+                                                            <option value="1">Seleccione interés</option>
+                                                            <option value="2">Celulares</option>
+                                                            <option value="3">Internet</option>
+                                                            <option value="4">Promociones</option>
+                                                            <option value="5">Portabilidad</option>
+                                                        </select>
+                                                        <label for="e2">Escoge la opción sobre la que deseas información</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-floating mb-3">
+                                                        <input class="form-control" id="e" name="numb" />
+                                                        <label for="e">Ingrese Numero Telefonico</label>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="form-floating mb-3">
                                                 <textarea class="form-control" id="e3" name="texto" type="text" style="height: 10rem;" data-sb-validations="required"></textarea>
@@ -92,16 +102,24 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <h2 class="display-6">Aún no te decides, te envíamos nuestras promociones, Animate!</h2>
-                        <form id="contactFormFooter" method="post" action="conexion/guardado_aux.php">
+                        <form class="a" id="contactFormFooter" method="post" action="conexion/guardado_aux.php">
                             <!-- ingreso de datos-->
-                            <div class="row-a">
-                                <div class="col">
+                            <div class="row">
+                                <div class="col ">
                                     <div class="form-floating">
                                         <input class="form-control form-control-lg" id="ea" name="email_au" type="email" />
                                         <label for="ea" class="text-black"> Ingrese Correo Electrónico</label>
                                     </div>
                                 </div>
-                                <div class="col-auto" style="padding: 0px 10px 10px 10px;"><button class="btn btn-danger btn-lg" id="submitButton" type="submit">Enviar</button></div>
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="e" name="numb" />
+                                        <label for="e" class="text-black">Ingrese Numero Telefonico</label>
+                                    </div>
+                                </div>
+                                <div class="col-auto" >
+                                    <button class="btn btn-danger btn-lg" id="submitButton" type="submit">Enviar</button>
+                                </div>
                             </div>                                
                         </form>
                     </div>

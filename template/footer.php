@@ -30,13 +30,13 @@
                                 ___
                             </li>
                             <li class="list-inline-item me-4">
-                                <a href="https://www.facebook.com/fija.argosal"><i class="bi-globe fs-3 text-danger"></i></a>
+                                <a href="https://www.facebook.com/fija.argosal" target="_blank" rel="noopener noreferrer"><i class="bi-globe fs-3 text-danger"></i></a>
                             </li>
                             <li class="list-inline-item me-4">
-                                <a href="https://www.facebook.com/movil.argosal/"><i class="bi-phone-fill fs-3 text-danger"></i></a>
+                                <a href="https://www.facebook.com/movil.argosal/" target="_blank" rel="noopener noreferrer"><i class="bi-phone-fill fs-3 text-danger"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/argosal.hogar/"><i class="bi-house fs-3 text-danger"></i></a>
+                                <a href="https://www.facebook.com/argosal.hogar/" target="_blank" rel="noopener noreferrer"><i class="bi-house fs-3 text-danger"></i></a>
                             </li>
                         </ul>
                     </div>

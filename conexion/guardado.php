@@ -13,12 +13,14 @@ try {
     $email = $_POST['email'];
     $lstOp = $_POST['lstOp'];
     $texto = $_POST['texto'];
+    $numb = $_POST['numb'];
 
 
-    $stmt = $conn->prepare("INSERT INTO dprincipales (email, lstOp, texto) VALUES (:email, :lstOp, :texto)");
+    $stmt = $conn->prepare("INSERT INTO dprincipales (email, lstOp, texto, numb) VALUES (:email, :lstOp, :texto, :numb)");
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':lstOp', $lstOp);
     $stmt->bindParam(':texto', $texto);
+    $stmt->bindParam(':numb', $numb);
     $stmt->execute();
 
    
