@@ -6,11 +6,11 @@
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item"><a href="#!" class="text-danger">Contacto</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="https://www.claro.com.pe/garantia_equipos/" class="text-danger">Garantía de equipos</a></li>
+                            <li class="list-inline-item"><a href="https://www.claro.com.pe/garantia_equipos/" class="text-danger" target="_blank" rel="noopener noreferrer">Garantía de equipos</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="https://www.claro.com.pe/proteccion-datos/" class="text-danger">Politicas de Privacidad</a></li>
+                            <li class="list-inline-item"><a href="https://www.claro.com.pe/proteccion-datos/" class="text-danger" target="_blank" rel="noopener noreferrer">Politicas de Privacidad</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="https://www.claro.com.pe/terminos-y-condiciones-de-la-web/" class="text-danger">Terminos y Condiciones</a></li>
+                            <li class="list-inline-item"><a href="https://www.claro.com.pe/terminos-y-condiciones-de-la-web/" class="text-danger" target="_blank" rel="noopener noreferrer">Terminos y Condiciones</a></li>
                             
                         </ul>
                         <p class="text-muted small mb-4 mb-lg-0">&copy; ARGOLSAL E.I.R.L. 2023. Todos los derechos reservados.</p>
