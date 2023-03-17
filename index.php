@@ -14,7 +14,7 @@
 <body>
     <?php require 'template/navbar.php';?>
     <div class="si">
-        <div class="container position-relative" style="margin-left: 50px;">
+        <div class="container position-relative">
                     <div class="row justify-content">
                         <div class="col-xl-6">
                             <div class="text-center text-black">
@@ -96,8 +96,10 @@
                             <!-- ingreso de datos-->
                             <div class="row-a">
                                 <div class="col">
-                                    <input class="form-control form-control-lg" id="ea" name="email_au" type="email" />
-                                    <label for="ea"> Ingrese Correo Electrónico</label>
+                                    <div class="form-floating">
+                                        <input class="form-control form-control-lg" id="ea" name="email_au" type="email" />
+                                        <label for="ea" class="text-black"> Ingrese Correo Electrónico</label>
+                                    </div>
                                 </div>
                                 <div class="col-auto" style="padding: 0px 10px 10px 10px;"><button class="btn btn-danger btn-lg" id="submitButton" type="submit">Enviar</button></div>
                             </div>                                

@@ -34,6 +34,10 @@
   padding: 5% 5% 5% 5%;
 }
 
+.container{
+  margin-left: 50px;
+}
+
 .row-a{
   display: flex;
   margin-top: 20px;
@@ -53,5 +57,12 @@
 /* Vista mobile */
 
 @media (max-width: 590px) {
-  
+  .si{
+    background: #aa0e0f;
+
+  }
+
+  .container{
+    margin-left: 0px;
+  }
 }
