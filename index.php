@@ -104,22 +104,24 @@
                         <h2 class="display-6">Aún no te decides, te envíamos nuestras promociones, Animate!</h2>
                         <form class="a" id="contactFormFooter" method="post" action="conexion/guardado_aux.php">
                             <!-- ingreso de datos-->
+                            
                             <div class="row">
-                                <div class="col ">
-                                    <div class="form-floating">
-                                        <input class="form-control form-control-lg" id="ea" name="email_au" type="email" />
-                                        <label for="ea" class="text-black"> Ingrese Correo Electrónico</label>
+                                    <div class="col-lg-6 ">
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control form-control-lg" id="ea" name="email_au" type="email" />
+                                            <label for="ea" class="text-black"> Ingrese Correo Electrónico</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="e" name="numb" />
-                                        <label for="e" class="text-black">Ingrese Numero Telefonico</label>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="e" name="numb" />
+                                            <label for="e" class="text-black">Ingrese Numero Telefonico</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-auto" >
-                                    <button class="btn btn-danger btn-lg" id="submitButton" type="submit">Enviar</button>
-                                </div>
+                                    <div class="col-lg-6 mx-auto" >
+                                        <button class="btn btn-danger btn-lg" id="submitButton" type="submit">Enviar</button>
+                                    </div>
+                                
                             </div>                                
                         </form>
                     </div>
