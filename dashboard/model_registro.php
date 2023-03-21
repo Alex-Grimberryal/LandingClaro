@@ -1,5 +1,5 @@
 <?php
-    require '../dashboard/db.php';
+    require_once ('db.php');
     class Registro_datos{
         public function buscar_usuario($arg_usuario)
                 {

@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	$_SESSION["user"]=null;
-	$_SESSION["pass"]=null;
+	$_SESSION["emai"]=null;
+	$_SESSION["passwor"]=null;
 	require_once("model_registro.php");
 	$usuing=$_POST["email"];
 	$claing=$_POST["password"];
@@ -9,16 +9,16 @@
 	$filas=$consultas->buscar_usuario($usuing);
 	foreach ($filas as $fila) 
 	{
-		$usuenc=$fila["usuario"];
+		$usuenc=$fila["email"];
+		
 		$claenc=$fila["password"];
 	}
-	if(($usuing==$usuenc) && ($claing==$claenc))
-//   if(($usuing==$usuenc) && ($claing == md5($claeno)))
+	if(($usuing==$usuenc) && (password_verify($claing,$claenc)))
 	{
-		$_SESSION["user"]=$usuenc;
-		$_SESSION["pass"]=$claenc;
+		$_SESSION["emai"]=$usuenc;
+		$_SESSION["passwor"]=$claenc;
 
-		header("location: admin.php");
+		// header("location: admin.php");
 	}
 	else
 	{

@@ -1,4 +1,28 @@
-<?php require '../dashboard/verify.php'; ?>
+<?php  
+
+    session_start();
+
+    require "db.php";
+
+    if(!empty($_POST['email']) && !empty($_POST['password'])){
+
+        $records = $con->prepare('SELECT id, email, password FROM users WHERE email = :email');
+        $records->bindParam(':email', $_POST['email']);
+        $records->execute();
+
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+
+        $message = '';
+
+        if(count($results) > 0 && password_verify($_POST['password'], $results['password'])){
+            $_SESSION['user_id'] = $results['id'];
+            header("Location: admin.php");
+        } else{
+            $message = "Lo siento no existes";
+        }
+
+    }
+?>
 
 <!DOCTYPE html>
 <html>
@@ -12,10 +36,10 @@
 <body>
     <div class="card text-center mb-3" style="width: 18rem;">
         <h1>Iniciar sesión</h1>
-        <?php if (isset($error)) { ?>
-            <div class="alert alert-danger"><?php echo $error; ?></div>
-        <?php } ?>
-        <form method="post" action="/dashboard/c_usuarios.php">
+        <?php if (!empty($message)): ?>
+            <div class="alert alert-danger"><?php echo $message; ?></div>
+        <?php endif ?>
+        <form method="post" action="login.php">
             <div class="form-group">
                 <label for="email">E-mail</label>
                 <input type="text" name="email" id="email" class="form-control">

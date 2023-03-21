@@ -1,20 +1,30 @@
 <?php
-	Class Conexion{
-		public function get_conexion()
-		{
-			$servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "datos_principales"; 
+		$servername = "localhost";
+		$username = "root";
+		$password = "";
+		$dbname = "datos_principales"; 
+
+		try {
+			$con=new PDO("mysql:host=$servername;dbname=$dbname;",$username,$password);
+		} catch (PDOException $e) {
+			die('No sirves p'. $e->getMessage());
+		}
+
+
+	// Class Conexion{
+	// 	public function get_conexion()
+	// 	{
+	// 		$servername = "localhost";
+    //         $username = "root";
+    //         $password = "";
+    //         $dbname = "datos_principales"; 
 
    
-			$conexion=new PDO("mysql:host=$servername;dbname=$dbname;charset=UTF8",$username,$password);
-			return $conexion;
-		}
-		public function get_desconexion()
-		{
-			$conexion=null;
-			return $conexion;
-		}
-	}
+	// 	}
+	// 	public function get_descon()
+	// 	{
+	// 		$con=null;
+	// 		return $con;
+	// 	}
+	// }
 ?>

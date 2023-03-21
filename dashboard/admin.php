@@ -1,9 +1,5 @@
 <?php 
-@session_start();
-if(!isset($_SESSION["user"])){
-	$mensaje = "Sessión no iniciada";
-	header("location: login.php?mens=$mensaje");
-}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,6 +15,7 @@ if(!isset($_SESSION["user"])){
 </head>
 <body>
 	<?php require '../dashboard/navegacion/navb.php'; ?>
+	<p><?php echo $_SESSION["user_id"]?></p>
     <div class="container">
 		<h2>Bienvenido Administrador</h2>
 		<p>Registro de datos acumulado</p>            

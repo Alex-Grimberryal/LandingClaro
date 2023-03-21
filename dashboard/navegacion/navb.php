@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["user"])){
+	$mensaje = "Sessión no iniciada";
+	header("location: login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +27,7 @@
                 <a class="nav-link active" aria-current="page" href="navegacion/register.php">Crear Nuevo Usuario</a>
                 </li>
                 <li class="nav-item" >
-                <a class="nav-link active" aria-current="page" href="#">Cerrar sesión</a>
+                <a class="nav-link active" aria-current="page" href="../dashboard/log_out.php">Cerrar sesión</a>
                 </li>
             </ul>
             </div>
