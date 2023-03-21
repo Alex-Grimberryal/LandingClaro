@@ -1,6 +1,8 @@
 <?php
 	session_start();
+
+    session_unset();
+
 	session_destroy();
-	$mensaje="Ha Cerrado Sesión Satisfactoriamente...";
 	header("location: ../index.php");
 ?>
