@@ -18,11 +18,8 @@
                     <div class="row justify-content">
                         <div class="col-xl-6">
                             <div class="text-center text-black">
-                                <!-- titulo-->
                                 <h1 class="display-2 text-white" style="font-size: 50px;">Bienvenido a la<br>Familia Claro!</h1>
-                                <!-- formulario-->
                                 <form class="form-subscribe" id="contactForm" method="post" action="conexion/guardado.php">
-                                    <!-- ingreso de datos-->
                                     <div class="container px-5">
                                         
                                             <div class="form-floating mb-3">
@@ -96,15 +93,12 @@
                 </div>
             </section>
     
-        <!-- email auxiliar-->
         <section class="call-to-action text-white text-center" id="signup">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <h2 class="display-6">Aún no te decides, te envíamos nuestras promociones, Animate!</h2>
-                        <form class="a" id="contactFormFooter" method="post" action="conexion/guardado_aux.php">
-                            <!-- ingreso de datos-->
-                            
+                        <form class="a" id="contactFormFooter" method="post" action="conexion/guardado_aux.php">                            
                             <div class="row">
                                     <div class="col-lg-6 ">
                                         <div class="form-floating mb-3">

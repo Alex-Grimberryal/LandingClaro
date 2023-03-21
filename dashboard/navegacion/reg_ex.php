@@ -25,7 +25,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<script>
-		// temporizador para redirección automática
 		var timeLeft = 30;
 		var countdown = setInterval(function(){
 			timeLeft--;

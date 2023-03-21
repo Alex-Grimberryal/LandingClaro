@@ -10,21 +10,4 @@
 			die('No sirves p'. $e->getMessage());
 		}
 
-
-	// Class Conexion{
-	// 	public function get_conexion()
-	// 	{
-	// 		$servername = "localhost";
-    //         $username = "root";
-    //         $password = "";
-    //         $dbname = "datos_principales"; 
-
-   
-	// 	}
-	// 	public function get_descon()
-	// 	{
-	// 		$con=null;
-	// 		return $con;
-	// 	}
-	// }
 ?>
