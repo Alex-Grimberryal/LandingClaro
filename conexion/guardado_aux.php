@@ -1,29 +1,26 @@
 <?php
 
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "datos_principales";
-$conn = mysqli_connect($host, $username, $password, $database);
+require 'dashboard/db.php';
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    $email = $_POST['email'];
+    $numb = $_POST['numb'];
 
 
-if (!$conn) {
-    die("Error al conectarse a la base de datos: " . mysqli_connect_error());
-}
+    $stmt = $conn->prepare("INSERT INTO dprincipales (email, numb) VALUES (:email, :numb)");
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':numb', $numb);
+    $stmt->execute();
 
-$numb = $_POST['numb'];
-$email = $_POST['email_au'];
-
-
-$sql = "INSERT INTO dprincipales (email, numb) VALUES ('$email','$numb')";
-
-if (mysqli_query($conn, $sql)) {
+   
     header("Location: confirmacion.php");
-} else {
-    echo "Error al guardar los datos: " . mysqli_error($conn);
+    exit();
+} catch(PDOException $e) {
+    
+    echo "Error: " . $e->getMessage();
 }
-
-
-mysqli_close($conn);
-
 ?>
