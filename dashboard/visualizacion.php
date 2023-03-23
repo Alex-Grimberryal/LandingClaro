@@ -1,35 +1,32 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "datos_principales";
-					
-$conn = new mysqli($servername, $username, $password, $dbname);
-					
-					if ($conn->connect_error) {
-						die("Conexión fallida: " . $conn->connect_error);
-					}
-					
-					
-					$sql = "SELECT id, numb, email, lstOp, texto FROM dprincipales";
-					$result = $conn->query($sql);
-					
-					
-					if ($result->num_rows > 0) {
-						while($row = $result->fetch_assoc()) {
-							echo "<tr>";
-							echo "<td>" . $row["id"] . "</td>";
-							echo "<td>" . $row["numb"] . "</td>";
-							echo "<td>" . $row["email"] . "</td>";
-							echo "<td>" . $row["lstOp"] . "</td>";
-							echo "<td>" . $row["texto"] . "</td>";
-							echo "</tr>";
-						}
-					} else {
-						echo "<tr><td colspan='5'>No hay datos disponibles</td></tr>";
-					}
-					
-					
-					$conn->close();
-				?>
+	require "db.php";	
+
+	$sql = "SELECT id, numb, email, lstOp, texto FROM dprincipales";
+	$results = $con->prepare($sql);
+
+	$results->execute();
+
+	$records = $results->fetchAll();
+
+	foreach($records as $res)
+      {
+        echo "<tr>";
+        echo "<td>".$res["id"]."</td>";
+        echo "<td>".$res["numb"]."</td>";
+        echo "<td>".$res["email"]."</td>";
+        $no = $res["lstOp"];
+		if ($no === 1) {
+			echo "<td>Celulares</td>";;
+		}elseif ($no === 2) {
+			echo "<td>Internet</td>";
+		}elseif ($no === 3) {
+			echo "<td>Promociones</td>";
+		}else{
+			echo "<td>Portabilidad</td>";
+		}
+			
+        echo "<td>".$res["texto"]."</td>";
+        echo "</tr>";
+      }   
+?>

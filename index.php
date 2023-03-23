@@ -30,11 +30,11 @@
                                                 <div class="col">
                                                     <div class="form-floating mb-3">
                                                         <select class="form-select" id="e2" name="lstOp" aria-label="New Field 2">
-                                                            <option value="1">Seleccione interés</option>
-                                                            <option value="2">Celulares</option>
-                                                            <option value="3">Internet</option>
-                                                            <option value="4">Promociones</option>
-                                                            <option value="5">Portabilidad</option>
+                                                            <option disabled select>Seleccione interés</option>
+                                                            <option value="1">Celulares</option>
+                                                            <option value="2">Internet</option>
+                                                            <option value="3">Promociones</option>
+                                                            <option value="4">Portabilidad</option>
                                                         </select>
                                                         <label for="e2">Escoge la opción sobre la que deseas información</label>
                                                     </div>
