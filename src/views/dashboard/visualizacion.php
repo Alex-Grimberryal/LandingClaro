@@ -1,6 +1,6 @@
 <?php
 
-	require "db.php";	
+	require "../../controller/db.php";	
 
 	$sql = "SELECT id, numb, email, lstOp, texto FROM dprincipales";
 	$results = $con->prepare($sql);

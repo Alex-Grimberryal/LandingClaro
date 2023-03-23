@@ -1,6 +1,7 @@
 <?php
 
-require '../dashboard/db.php';
+require "../controller/db.php";	
+
 
 try {      
     $email = $_POST['email'];

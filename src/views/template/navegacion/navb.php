@@ -24,7 +24,7 @@ if(!isset($_SESSION["user_id"])){
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="navegacion/register.php">Crear Nuevo Usuario</a>
+                <a class="nav-link active" aria-current="page" href="../template/navegacion/register.php">Crear Nuevo Usuario</a>
                 </li>
                 <li class="nav-item" >
                 <a class="nav-link active" aria-current="page" href="../dashboard/log_out.php">Cerrar sesión</a>

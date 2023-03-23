@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/claro-logo.ico" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="src/public/img/claro-logo.ico" />
+    <link rel="stylesheet" href="src/public/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Registro</title>
 </head>
 <body>
-    <?php require 'template/navbar.php';?>
+    <?php require 'src/views/template/navbar.php';?>
     <div class="si">
         <div class="container position-relative">
                     <div class="row justify-content">
                         <div class="col-xl-6">
                             <div class="text-center text-black">
                                 <h1 class="display-2 text-white" style="font-size: 50px;">Bienvenido a la<br>Familia Claro!</h1>
-                                <form class="form-subscribe" id="contactForm" method="post" action="conexion/guardado.php">
+                                <form class="form-subscribe" id="contactForm" method="post" action="src/conexion/guardado.php">
                                     <div class="container px-5">
                                         
                                             <div class="form-floating mb-3">
@@ -124,7 +124,7 @@
         </section>
     
         
-<?php require 'template/footer.php';?>
+<?php require 'src/views/template/footer.php';?>
 
 </body>
 </html>

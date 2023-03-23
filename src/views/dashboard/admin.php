@@ -13,7 +13,7 @@
 
 </head>
 <body>
-	<?php require '../dashboard/navegacion/navb.php'; ?>
+	<?php require '../template/navegacion/navb.php'; ?>
 	<p><?php echo $_SESSION["user_id"]?></p>
     <div class="container">
 		<h2>Bienvenido Administrador</h2>
