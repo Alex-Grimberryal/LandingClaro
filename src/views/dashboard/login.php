@@ -6,7 +6,7 @@
 
     if(!empty($_POST['email']) && !empty($_POST['password'])){
 
-        $records = $con->prepare('SELECT id, email, password FROM users WHERE email = :email');
+        $records = $con->prepare('SELECT * FROM users WHERE email = :email');
         $records->bindParam(':email', $_POST['email']);
         $records->execute();
 
@@ -16,6 +16,7 @@
 
         if(count($results) > 0 && password_verify($_POST['password'], $results['password'])){
             $_SESSION['user_id'] = $results['id'];
+            $_SESSION['user_name'] = $results['usuario'];
             header("Location: admin.php");
         } else{
             $message = "Lo siento no existes";
@@ -34,22 +35,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="card text-center mb-3 mx-auto" style="width: 18rem;">
-        <h1>Iniciar sesión</h1>
-        <?php if (!empty($message)): ?>
-            <div class="alert alert-danger"><?php echo $message; ?></div>
-        <?php endif ?>
-        <form method="post" action="login.php">
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="text" name="email" id="email" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-        </form>
+    <div class="card mx-auto mt-5" style="width: 18rem;">
+        <div class="card-header">
+            <h1 class="text-center">Iniciar sesión</h1>
+        </div>
+        <div class="card-body">
+            <?php if (!empty($message)): ?>
+                <div class="alert alert-danger"><?php echo $message; ?></div>
+            <?php endif ?>
+            <form method="post" action="login.php">
+                <div class="form-floating mb-3">
+                    <input type="text" name="email" id="email" class="form-control text-end">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" name="password" id="password" class="form-control text-end">
+                    <label for="password">Contraseña</label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 </body>
