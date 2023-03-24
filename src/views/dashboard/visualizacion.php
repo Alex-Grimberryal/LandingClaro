@@ -2,7 +2,7 @@
 
 	require "../../controller/db.php";	
 
-	$sql = "SELECT id, numb, email, lstOp, dni FROM dprincipales";
+	$sql = "SELECT id, numb, email, lstOp, dni, apellido, nombre FROM dprincipales";
 	$results = $con->prepare($sql);
 
 	$results->execute();
@@ -27,6 +27,8 @@
 		}
 			
         echo "<td>".$res["dni"]."</td>";
+		echo "<td>".$res["apellido"]."</td>";
+		echo "<td>".$res["nombre"]."</td>";
         echo "</tr>";
       }   
 ?>

@@ -11,6 +11,8 @@
 							<th>E-mail</th>
 							<th>Opción Seleccionada</th>
 							<th>DNI</th>
+							<th>Apellidos</th>
+							<th>Nombres</th>
 						</tr>
 					</thead>
 					<tbody>
