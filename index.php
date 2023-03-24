@@ -20,7 +20,7 @@
                             <div class="text-center text-black">
                                 <h1 class="display-2 text-white" style="font-size: 50px;">Bienvenido a la<br>Familia Claro!</h1>
                                 <form class="form-subscribe" id="contactForm" method="post" action="src/conexion/guardado.php">
-                                    <div class="container px-5">
+                                    <div class="a container px-5">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="e3" name="dni" data-sb-validations="required"></input>
                                                 <label for="e3">Ingresa tu DNI </label>

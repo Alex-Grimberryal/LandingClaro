@@ -9,8 +9,8 @@
 							<th>Id</th>
 							<th>Número</th>
 							<th>E-mail</th>
+							<th>Opción Seleccionada</th>
 							<th>DNI</th>
-							<th>Indicaciones extras</th>
 						</tr>
 					</thead>
 					<tbody>
