@@ -21,7 +21,10 @@
                                 <h1 class="display-2 text-white" style="font-size: 50px;">Bienvenido a la<br>Familia Claro!</h1>
                                 <form class="form-subscribe" id="contactForm" method="post" action="src/conexion/guardado.php">
                                     <div class="container px-5">
-                                        
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="e3" name="dni" data-sb-validations="required"></input>
+                                                <label for="e3">Ingresa tu DNI </label>
+                                            </div>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="e" name="email" type="email"/>
                                                 <label for="e">Ingrese Correo Electrónico</label>
@@ -46,10 +49,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-floating mb-3">
-                                                <textarea class="form-control" id="e3" name="texto" type="text" style="height: 10rem;" data-sb-validations="required"></textarea>
-                                                <label for="e3">Puedes agregar indicaciones opcionales sobre lo que quieres recibir </label>
-                                            </div>
+                                            
                                             
                                             <div class="d-grid">
                                                 <button class="btn btn-danger btn-lg" name="enviar" type="submit">Enviar informacion</button>

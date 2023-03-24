@@ -56,7 +56,7 @@
 
 /* Vista mobile */
 
-@media (max-width: 590px) {
+@media (max-width: 728px) {
   .si{
     background: #aa0e0f;
 
@@ -69,4 +69,6 @@
   .vist_mov{
     display: block;
   }
+
+
 }

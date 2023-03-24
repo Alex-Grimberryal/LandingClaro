@@ -2,7 +2,7 @@
 
 	require "../../controller/db.php";	
 
-	$sql = "SELECT id, numb, email, lstOp, texto FROM dprincipales";
+	$sql = "SELECT id, numb, email, lstOp, dni FROM dprincipales";
 	$results = $con->prepare($sql);
 
 	$results->execute();
@@ -26,7 +26,7 @@
 			echo "<td>Portabilidad</td>";
 		}
 			
-        echo "<td>".$res["texto"]."</td>";
+        echo "<td>".$res["dni"]."</td>";
         echo "</tr>";
       }   
 ?>
